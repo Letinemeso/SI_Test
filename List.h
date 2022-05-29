@@ -140,8 +140,8 @@ private:
 	class Serializer
 	{
 	public:
-		void save(const std::string& _path, const List& _list) const;	// n*log(n)
-		void load(const std::string& _path, List& _list) const;			// n
+		void save(const std::string& _path, const List& _list) const;	// Complexity: O(n*log(n))
+		void load(const std::string& _path, List& _list) const;			// Complexity: O(n)
 
 	};
 	friend class Serializer;
