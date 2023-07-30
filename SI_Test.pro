@@ -4,8 +4,8 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 HEADERS += \
-        List.h
+        ListRand.h
 
 SOURCES += \
-        List.cpp \
+        ListRand.cpp \
         Main.cpp
