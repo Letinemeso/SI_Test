@@ -16,21 +16,21 @@ void ListRand::Serialize(std::ofstream& _file) const
     std::unordered_map<ListNode*, unsigned int> indices_hmap;
 
     ListNode* node_it = Head;
-    for(unsigned int i = 0; i < Count; ++i)
+    for(int i = 0; i < Count; ++i)
     {
         indices_hmap.emplace(node_it, i);
         node_it = node_it->Next;
     }
 
     node_it = Head;
-    for(unsigned int i = 0; i < Count; ++i)
+    for(int i = 0; i < Count; ++i)
     {
         _file << '"' << node_it->Data << '"' << ' ';
         node_it = node_it->Next;
     }
 
     node_it = Head;
-    for(unsigned int i = 0; i < Count; ++i)
+    for(int i = 0; i < Count; ++i)
     {
         _file << indices_hmap.at(node_it->Rand) << ' ';
         node_it = node_it->Next;

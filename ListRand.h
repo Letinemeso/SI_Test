@@ -12,7 +12,7 @@ namespace SI_Test
     {
         ListNode* Prev = nullptr;
         ListNode* Next = nullptr;
-        ListNode* Rand = nullptr;
+        ListNode* Rand = this;
         std::string Data;
     };
 
